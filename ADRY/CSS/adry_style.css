@@ -1,0 +1,95 @@
+/*style generator*/
+@font-face {
+  font-family: "kaushan";
+  src: url(../font/kaushanscript-regular.woff) format("woff");
+}
+
+/* style */
+body {
+  background-image: url(../Img/bg.jpeg);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+.container {
+  margin: auto;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20%;
+  background-color: #999;
+  position: relative;
+  height: 10%;
+}
+
+.nama h3 {
+  font-family: "kaushan";
+  font-size: 40px;
+  margin-left: 10%;
+}
+
+.db-main {
+  margin-top: 5%;
+  text-align: end;
+}
+
+.db-main ul li {
+  display: inline-block;
+  margin-right: 25px;
+}
+
+.db-main ul li a {
+  text-decoration: none;
+  font-size: 150%;
+  color: #83d51e;
+}
+
+.nama:hover {
+  text-shadow: 3px 3px #15ff00;
+}
+
+.db-main ul li a:hover {
+  color: #15ff00;
+  text-shadow: 2px 2px #000;
+}
+
+.content {
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: justify;
+}
+
+.content img {
+  width: 30%;
+  float: left;
+  padding: 1.5%;
+}
+
+.content .desk {
+  padding: 3%;
+  color: #fff;
+  text-shadow: 1px 1px #777, -1px 1px #777, 1px -1px #777,
+    -1px -1px #777;
+  background-color: rgba(0, 0, 0, .4);
+  height: 680px;
+
+}
+
+/* clearfix */
+.cf:before,
+.cf:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
